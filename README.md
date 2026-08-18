@@ -17,15 +17,6 @@ accessible materials published between 2015 and 2025, including:
 - Government and grid-operator publications
 - Data Center Dynamics and other publicly available media reports
 
-A source inventory containing document titles, firms, publishers, publication
-dates, document types, and source URLs is provided in:
-
-`data/source_inventory.csv`
-
-Original third-party documents are not redistributed in this repository.
-Users should retrieve them from the original providers subject to their
-applicable copyright and terms of use.
-
 ### 2. Historical data-center locations
 
 Historical facility records for Amazon, Microsoft, Google, Meta, Oracle, and

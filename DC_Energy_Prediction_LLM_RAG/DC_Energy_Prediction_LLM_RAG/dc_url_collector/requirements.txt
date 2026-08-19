@@ -1,0 +1,8 @@
+# Core dependencies
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+duckduckgo_search>=4.0.0
+tqdm>=4.65.0
+
+# Optional (faster HTML parsing)
+# lxml>=4.9.0

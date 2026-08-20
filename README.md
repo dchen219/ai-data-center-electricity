@@ -69,16 +69,26 @@ Where applicable, the study also draws contextual information from:
 Original third-party geospatial files are not redistributed unless permitted
 by their respective licenses.
 
-### 5. Repository outputs
+## Code availability
 
-Subject to third-party licensing restrictions, this repository provides:
+This repository contains the custom code and intermediate outputs used for:
 
-- Processed AI data-center siting estimates
-- Site-level or aggregated siting probabilities
-- Firm-level electricity-demand projections
-- Regional EDPI estimates
-- Intermediate model outputs
-- Data underlying the manuscript figures and tables
+1. Constructing and querying the document corpus
+2. Identifying existing and prospective AI data-center locations
+3. Extracting site-level technical and operational parameters
+4. Projecting firm- and region-level electricity demand
+5. Calculating the Electricity Demand Pressure Index (EDPI)
+6. Generating the tables and figures reported in the manuscript
 
-See `data/README.md` for the description, units, provenance, and processing
-history of each released file.
+The workflow was implemented in Python using:
+
+- LangChain for retrieval-augmented generation (RAG)
+- FAISS for vector storage and semantic retrieval
+- Hugging Face `all-MiniLM-L6-v2` for text embeddings
+- OpenAI GPT-4o-mini for structured inference
+- pandas and NumPy for data processing and numerical calculations
+- Matplotlib and Seaborn for visualization
+
+The LLM analyses used fixed prompt templates, a temperature setting of `0.3`,
+and structured JSON parsing. API credentials are not included in this
+repository.
